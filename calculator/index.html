@@ -47,7 +47,7 @@
             cursor: pointer;
         }
 
-        .ipt-num {
+        #ipt-num {
             background-color: var(--color-pink);
             display: flex;
             margin: auto;
@@ -72,11 +72,11 @@
 
     <div class="calc">
         <h1>Calculator </h1>
-        <input type="text" class="ipt-num">
+        <input type="text" value="arroz" id="ipt-num">
         
         <table>
             <tr>
-                <td><button class="btn-num">AC</button></td>
+                <td><button class="btn-num" onclick="allClear()">AC</button></td>
                 <td><button class="btn-num">( )</button></td>
                 <td><button class="btn-num">%</button></td>
                 <td><button class="btn-num">/</button></td>
