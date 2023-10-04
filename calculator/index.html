@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600&display=swap');
+
+        :root {
+            --color-green: #75af69;
+            --color-lightpink: #f0c3c3;
+            --color-pink: #c2244b;
+            --color-magenta: #610533;
+            --color-purple: #2e0523;
+        }
+
+        body, html {
+            font-family: 'Gabarito';
+            display: flex;
+            background-color: var(--color-purple);
+            justify-content: center;
+        }
+
+        .calc {
+            margin-top: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        .btn-num {
+            border: none;
+            width: 10vw;
+            height: 10vh;
+            border-radius: 5px;
+            background-color: var(--color-lightpink);
+        }
+
+        .btn-num:hover {
+            background-color: var(--color-green);
+            cursor: pointer;
+        }
+
+        .ipt-num {
+            background-color: var(--color-pink);
+            display: flex;
+            margin: auto;
+            text-align: end;
+            width: 98%;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: var(--color-green);
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+ 
+
+    <div class="calc">
+        <h1>Calculator </h1>
+        <input type="text" class="ipt-num">
+        
+        <table>
+            <tr>
+                <td><button class="btn-num">AC</button></td>
+                <td><button class="btn-num">( )</button></td>
+                <td><button class="btn-num">%</button></td>
+                <td><button class="btn-num">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-num" onclick="buttonNumber(1)">1</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(2)">2</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(3)">3</button></td>
+                <td><button class="btn-num">x</button></td>
+                
+            </tr>
+            <tr>
+                <td><button class="btn-num" onclick="buttonNumber(4)">4</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(5)">5</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(6)">6</button></td>
+                <td><button class="btn-num">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-num" onclick="buttonNumber(7)">7</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(8)">8</button></td>
+                <td><button class="btn-num" onclick="buttonNumber(9)">9</button></td>
+                <td><button class="btn-num">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-num" onclick="buttonNumber(0)">0</button></td>
+                <td><button class="btn-num">.</button></td>
+                <td><button class="btn-num">--</button></td>
+                <td><button class="btn-num">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
